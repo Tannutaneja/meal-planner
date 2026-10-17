@@ -1,3 +1,4 @@
-streamlit
+streamlit>=1.40
 firebase-admin
-groq
+groq>=0.13
+tzdata

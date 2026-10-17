@@ -1,136 +1,84 @@
-# Flatmate Meal Planner: Setup Guide
+# Meal Planner v3: what changed and how to update
 
-Goal: a link like `https://flat-meals.streamlit.app` that you and your flatmates can open anytime, from any phone, even when your laptop is off.
+## What's new
 
-Total time: about 30 minutes, one time only. Cost: zero. No credit card anywhere.
+| # | Change |
+|---|---|
+| 1 | Dark mode fixed. All custom colours removed; cards are native Streamlit boxes that follow the phone's light/dark setting. Mint accent colour in both modes. |
+| 2 | Up to 10 "From your kitchen" options per meal, inside a scrollable box. Anything logged in the last 7 days is skipped. AI ranks the list for the day (variety vs yesterday, quick on weekdays, elaborate on weekends). |
+| 3 | Mint leaf 🌿 in the browser tab, page titles and sidebar. Upload a `logo.png` to use a real image instead. |
+| 4 | AI fixed (the old model was shut down by Groq on 16 Aug 2026). Now uses `openai/gpt-oss-20b`. "Try something new" shows up to 2 cookbook picks + 2 AI ideas. Errors are shown on screen instead of failing silently. |
+| 5 | Recipes added by anyone now appear on today's vote immediately (tagged "added by ..."). Each meal also has "Add an option to today's vote". The sidebar now tells you exactly what happened when a recipe already exists. |
+| 6 | New Calendar page: pick any day in the last 90 days, record breakfast/lunch/dinner and who cooked. Feeds future suggestions. Includes a 14-day table and stats. |
+| Also | "Today" is now Indian time (Streamlit servers run on UTC, so before 5:30 AM the app used to think it was yesterday). |
 
----
+## v4 additions
 
-## How it works (the big picture)
+| Change | Detail |
+|---|---|
+| Quick / elaborate toggle | At the top of the menu. Off = dishes up to 30 min, on = longer dishes. Shared by the whole group for that day. Switching re-plans meals not yet logged and resets their votes. |
+| Cooking-time defaults | New onboarding step asks what the group prefers on weekdays and weekends. Existing groups default to quick on weekdays, elaborate on weekends; change it in the sidebar under "Cooking-time defaults". |
+| 4 new ideas per meal | Aim is 2 cookbook picks + 2 AI ideas. If one side has fewer, the other fills the gap. |
+| Cookbook times | Estimated from timings written in each recipe's method, plus 10 min prep. Shown with "~". 142 of 199 recipes have one; they tend to run low. |
+| Quick guide | Opens once for each person the first time they enter a group. Reopen anytime from the sidebar. Also on the landing page under "New here?". |
 
-| Piece | Job | Where it lives |
-|---|---|---|
-| GitHub | Stores your code | github.com (free) |
-| Streamlit Community Cloud | Runs the app 24/7 and gives you the link | share.streamlit.io (free) |
-| Firebase Firestore | Stores groups, recipes, votes, history | Google cloud (free) |
-| Groq | AI brain for "Try Something New" | groq.com (free) |
+## How to update (10 min)
 
-Your laptop is only used for setup. After that, it can be off.
+Your Firebase data stays as it is. Nothing to redo.
 
----
-
-## Part 1: Get your Groq key (3 min)
-
-1. Open https://console.groq.com and sign in with Google.
-2. Left menu: **API Keys**, then **Create API Key**. Name it `meal-planner`.
-3. Copy the key (starts with `gsk_`). Paste it into Notepad. You can only see it once.
-
-## Part 2: Set up Firebase (10 min)
-
-1. Open https://console.firebase.google.com and sign in.
-2. Click **Create a project**. Name: `meal-planner`. Turn **off** Google Analytics. Click **Create project**, then **Continue**.
-3. Left menu: **Build > Firestore Database > Create database**.
-   - Location: `asia-south1 (Mumbai)`.
-   - Mode: choose **Production mode**. (The app uses an admin key that works regardless, and production mode never expires. Test mode stops working after 30 days.)
-   - Click **Create**.
-4. Click the **gear icon** next to "Project Overview" > **Project settings** > **Service accounts** tab.
-5. Click **Generate new private key** > **Generate key**. A `.json` file downloads.
-6. Treat this file like a password. Never upload it to GitHub.
-
-## Part 3: Put the code on GitHub (5 min)
-
-1. Sign up at https://github.com (free).
-2. Top right **+** > **New repository**. Name: `meal-planner`. Choose **Public** (Private also works). Click **Create repository**.
-3. Click **uploading an existing file**. Drag in exactly these files:
-   - `app.py`
-   - `requirements.txt`
-   - `README.md`
-4. Click **Commit changes**.
-
-Do NOT upload the Firebase JSON file or your Groq key.
-
-## Part 4: Deploy on Streamlit Community Cloud (7 min)
-
-1. Open https://share.streamlit.io and click **Continue with GitHub**. Allow access.
-2. Click **Create app** > **Deploy a public app from GitHub**.
-3. Fill in:
-   - Repository: `your-username/meal-planner`
-   - Branch: `main`
-   - Main file path: `app.py`
-   - App URL: pick something like `flat-meals`
-4. Click **Advanced settings**. In the **Secrets** box, paste this template:
+1. Open your GitHub repo.
+2. Replace `app.py` and `requirements.txt` with the new versions: click the file > pencil icon > select all > paste > Commit. Or **Add file > Upload files** and drop the new files in (same names overwrite).
+3. Upload `cookbook.json` (empty for now).
+4. Create the theme file: **Add file > Create new file**. In the name box type exactly `.streamlit/config.toml` (typing the `/` creates the folder). Paste the contents of `config.toml`. Commit.
+5. Optional: **Add file > Upload files** > `logo.png` (a square mint-leaf PNG, 256x256 or bigger).
+6. Go to share.streamlit.io > your app > three dots > **Reboot app**.
+7. Check Secrets (three dots > Settings > Secrets) still contain `GROQ_API_KEY` and `FIREBASE_JSON`. Nothing new is required. Optional extras:
 
 ```toml
-GROQ_API_KEY = "paste-your-gsk-key-here"
-
-FIREBASE_JSON = '''
-PASTE THE ENTIRE CONTENTS OF YOUR FIREBASE .json FILE HERE
-'''
+GROQ_MODEL = "openai/gpt-oss-20b"   # change here if Groq retires this one too
+TIMEZONE = "Asia/Kolkata"
 ```
 
-5. Open the Firebase `.json` file in Notepad, select all (Ctrl+A), copy, and paste it between the two `'''` lines. Replace the Groq placeholder with your real key.
-6. Click **Save**, then **Deploy**.
-7. Wait 2 to 4 minutes. Your app opens at `https://flat-meals.streamlit.app`.
+## Checks after updating
 
-## Part 5: Start using it (2 min)
+- Open on your phone in dark mode: all text should be readable.
+- The AI status line in the sidebar should say "AI suggestions on".
+- Breakfast should show up to 10 kitchen options in a box you can scroll inside.
+- Today's suggestions are rebuilt once automatically with the new logic. Votes already cast today may need to be redone; tap "Refresh suggestions" on a meal if anything looks off.
 
-1. Open the link, type your name, click **Create Group**.
-2. Group name > food preference > pick breakfast, lunch, dinner recipes > **Create Group**.
-3. Copy the 6-letter group code.
-4. Send the link and the code to your flatmates on WhatsApp.
-5. They open the link, type their name, paste the code, click **Join Group**. Done.
+If the app does not switch with your phone's dark mode, delete `.streamlit/config.toml` from GitHub and reboot. You can always switch manually: three dots (top right of the app) > Settings > Theme.
 
-Tip: on your phone, open the link in Chrome, tap the three dots menu > **Add to Home screen**. It now behaves like an app icon.
+## Cookbook format
 
----
+`cookbook.json` holds a list of recipes. The app filters them by the group's diet and meal, skips anything the group already has or ate this week, and the AI picks the best 2.
 
-## "Will it run anytime?"
-
-Yes, with one catch.
-
-- The app runs on Streamlit's servers 24/7. Your laptop can be off.
-- If **nobody opens the app for 12 hours**, Streamlit puts it to sleep to save resources.
-- Whoever opens it next sees a "This app has gone to sleep" page. Tap **Yes, get this app back up!** Anyone can do this, not just you. It takes about 30 to 60 seconds.
-- Your data is never lost. It lives in Firebase, not in the app.
-
-For a flat that opens it every day, this happens at most once a morning. Not worth fixing.
-
----
-
-## Option B: run on your own laptop (for testing or editing)
-
-This works only while your laptop is on, and only you (or people on your Wi-Fi) can use it.
-
-1. Install Python from https://www.python.org/downloads (on Windows, tick **Add Python to PATH**).
-2. Put `app.py` and `requirements.txt` in a folder, e.g. `Desktop/meal-planner`.
-3. Inside that folder, create a folder named `.streamlit`, and inside it a file named `secrets.toml` with the same content you pasted in Part 4.
-4. Open Terminal (Mac) or Command Prompt (Windows), then:
-
-```bash
-cd Desktop/meal-planner
-pip install -r requirements.txt
-streamlit run app.py
+```json
+{
+  "recipes": [
+    {
+      "name": "Rava Idli",
+      "meal_types": ["Breakfast"],
+      "diet": "veg",
+      "ingredients": "semolina, curd, mustard seeds, curry leaves",
+      "prep_time": "25 min"
+    }
+  ]
+}
 ```
 
-5. Browser opens at `http://localhost:8501`.
-6. To let flatmates on the same Wi-Fi use it: `streamlit run app.py --server.address 0.0.0.0`, then they open `http://<your-laptop-ip>:8501`.
+- `diet`: `veg`, `eggetarian` or `non-veg`
+- `meal_types`: any of `Breakfast`, `Lunch`, `Dinner`
 
-Since both versions use the same Firebase, data you create locally also shows up on the hosted app.
+## Free limits (Groq, gpt-oss-20b)
 
----
+30 requests/minute, 1,000/day, 8,000 tokens/minute. The app makes 1 AI call per group per day, plus 1 per "Refresh suggestions" tap. If you tap refresh rapidly you may see "Groq's free limit is busy"; wait a minute.
 
-## Updating the app later
+## Troubleshooting
 
-Edit `app.py` on GitHub (pencil icon) and commit. Streamlit Cloud picks up the change automatically within a minute.
-
-## If something breaks
-
-| What you see | Likely cause | Fix |
-|---|---|---|
-| `KeyError: FIREBASE_JSON` or `firebase` | Secrets not saved | share.streamlit.io > your app > three dots > Settings > Secrets |
-| `JSONDecodeError` | JSON pasted incompletely | Re-copy the whole file, including the first `{` and last `}` |
-| `ModuleNotFoundError` | requirements.txt missing on GitHub | Upload it, then Reboot app |
-| No "Try Something New" cards | Groq key missing or wrong | Check `GROQ_API_KEY` in secrets |
-| Permission denied from Firestore | Wrong project's JSON key | Generate a new key from the correct Firebase project |
-
-Full error details: on your app page, bottom right **Manage app** shows the logs.
+| Message | Fix |
+|---|---|
+| "AI is off: add GROQ_API_KEY" | Add the key in Secrets, reboot |
+| "The Groq key is invalid" | Make a new key at console.groq.com, update Secrets |
+| "The AI model ... is not available" | Pick a current model at console.groq.com/docs/models, set `GROQ_MODEL` in Secrets |
+| "Groq's free limit is busy" | Wait 1 minute, tap Refresh suggestions |
+| Any red error box | Manage app (bottom right) > copy the log and send it over |

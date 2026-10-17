@@ -1,0 +1,2094 @@
+{
+ "source": [
+  "Creative Vegetarian Cooking",
+  "Vegetarian Cooking - British Taste"
+ ],
+ "recipes": [
+  {
+   "name": "Russian Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, frozen green peas, carrots, turnips, head lettuce, eggless mayonnaise",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Greek Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "tin artichoke hearts, feta cheese, tomatoes, salad oil, lemon juice",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Salad Surprise",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "canned kidney, cooked macaroni, pineapple titbits, canned corn kernels, raisins, carrots, tomatoes, cucumbers",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Gado Gado",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "cabbage, cauliflower, carrots, potatoes cooked and, head lettuce shredded, cucumbers, fried bean curd, peanut sauce",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Papaya Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "raw papaya, garlic, red chilli powder, tomato, cucumber, brown sugar, lemon juice, lettuce leaves",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Thai Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "red pepper, yellow pepper, head broccoli, onions, cucumbers, head cabbage, lemon juice, chilli sauce",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cucumber Boat",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "cucumbers, cherries, grated, green pepper, tomato, onion, carrot, parsley",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Carrot Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "carrot, onion, green pepper, your choice of dressing",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bean Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "green beans, yellow beans, red kidney beans, garbanzo beans, onion sliced, green pepper sliced, celery sliced, vinaigrette",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Baked Potato Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, olive oil, shallots, fresh thyme leaves, fresh rosemary leaves, chopped parsley, chopped garlic, lemon juice",
+   "prep_time": "~25 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bamboo Shoots Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "canned sliced, spring onions, onion, garlic, lime juice, soya sauce, chilli sauce, parsley",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spaghetti Vegetable Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "spaghetti, cucumber, tomato, onion, chopped celery, green pepper, grated cheddar cheese, italian dressing",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cream of Pumpkin Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "pumpkin, onions, butter, milk, melted butter, flour, cream, soya sauce",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Asparagus Cheese Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "butter, flour, nutmeg, pepper, milk, packages, grated cheddar cheese",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Carrot Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "carrots, celery, white sauce",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Minestrone Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "carrots, turnips, potatoes, sticks celery, tomatoes, leek, shredded cabbage, butter",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Mushroom Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "variety of canned, bread croutons per serving, vegetable stock, soya sauce",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cabbage Chowder",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "head cabbage, onion, tomatoes, green peppers, white sauce, cheddar cheese, paprika, fresh coriander",
+   "prep_time": "~25 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cream of Spinach Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "spinach leaves, onion, tomato, celery, garlic, turmeric powder, cream style corn",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cream of Corn Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cream style corn, butter, flour, milk, fresh cream",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Green Pea Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "fresh green peas, onion, garlic, butter, cream",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Lentil Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "masoor, onions, tomatoes, shallots, ghee, garlic, ginger, red chillies",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cream of Tomato Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "tomatoes, celery, carrots, turnips, onion, white sauce, butter",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Potato Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, cabbage, olive oil, bread croutons, parsley",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Miso Soup (Japanese Favourite)",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "bean curd, fresh straw mushrooms, pc kelp, akamiso, shiromiso, brown soya beans, chopped spring onions",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cream of Vegetable Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cauliflower, carrots, onions, turnips, butter, whipped cream",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Mock Shark’s Fin Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "white fungus, carrot, cream style corn, slab soft beancurd, substitute soft beancurd, spring onions, ajinomoto, soya sauce",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bread Muffins",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "fresh yeast in 1/2 cup, flour, milk, baking soda",
+   "prep_time": "~35 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bun Bread Sandwiches",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "bread buns, your choice of jam, butter, mixed fruit, chaat masala",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cheese Toast with Apple Sauce",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "no-lard bread, cheese, nutmeg powder, apple sauce",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spicy Cheese Toast",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "no-lard bread, cheese, onion, tomato, green chilli, fresh coriander, butter",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Hot Dogs",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "hot dog buns, apple, potato, onion, tomato, cucumber, celery, eggless mayonnaise",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Double Decker Dollars",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "loaf of no-lard bread, butter, cream cheese, coconut-mint chutney, tomato ketchup",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Ribbon Sandwiches",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "tomato ketchup, mint chutney, butter",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Pinwheel Sandwiches",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "loaf of no-lard, your choice of jam, cream, butter",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cheese Cutlets",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, cottage cheese, chopped fresh coriander, green chillies, cabbage, onions, bread, plain flour",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Onion Cakes",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, spring onions, sesame oil, white pepper",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Semolina Cakes",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "semolina, sour yogurt, turmeric powder, soda bicarbonate, mustard seeds, curry leaves, red chilli powder",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Potato Bonda",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "besan, sized potatoes, onion, ginger paste, fresh coriander, green chillies, garam masala, roasted cumin seeds",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Lentil Bonda",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "urad dal, green chillies, parsley, grated coconut, ginger, peppercorns",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetarian Omelette",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "chick pea flour, all-purpose flour, tomato, grated cheddar cheese, soda bicarbonate, fresh coriander leaves, finely chopped onion, red chilli powder",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Idli Sambar",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, urad dal, fenugreek",
+   "prep_time": "~4 hr 50 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Sambar",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "tur dal, pumpkin, ladies fingers, onions, coconut, red chillies, coriander seeds, mustard seeds",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spiced Chick Peas",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "chick peas, garam masala, lemon juice, green chilli, onion, tomato, parsley",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bean Curd Fritters",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "soft bean curd, chick pea flour, a pinch of soda bicarbonate, chilli powder, green chilli, coriander, soya sauce, sesame oil",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bread Rolls",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "bread slices, cheddar cheese, onion, fresh coriander, green chillies",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Lentil Balls in Yogurt (Dahi Wadas)",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "urad dal, yogurt, chilli powder, cumin seeds, fresh coriander, green chillies, cumin powder, pepper",
+   "prep_time": "~4 hr 10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Frankee",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, bread, potatoes, peas, green chillies, lemon juice, garam masala, grated cheddar cheese",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spinach Rolls",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "puff pastry, spinach leaves, tomatoes, onion, green chillies, lemon juice, yogurt",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable Samosas",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "flour, vegetable fat, potatoes, frozen peas, chopped coriander, chilli powder, turmeric powder, garam masala",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable Fritters",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "your choice of vegetables, besan, turmeric powder, chilli powder, coriander seeds, pomegranate seeds, a pinch of soda bicarbonate",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable Cutlets",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, carrots, frozen peas, onion, capsicum, breadcrumbs, flour, lemon juice",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Semolina Vegetable Combo (Uppama)",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "semolina, sprouted green beans, carrots, green chillies, fresh coriander, coconut, lemon juice, lentils",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Chinese Chop Suey",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "head of celery, button mushrooms, bamboo sprouts, onions, carrots, soya sauce, cornstarch",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Noodle Nest",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "carrots, beancurds, green peppers, cabbage, onion, garlic-ginger paste, ajinomoto, cornstarch",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cabbage in Coconut Milk",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cabbage, coconut milk, red chillies, shallots, turmeric powder, lemon juice",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Creamed Cabbage",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "head cabbage, shredded, butter, flour, milk, paprika, minced onion, minced parsley",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Choy Saam",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "choy saam, vegetable fat, cumin seeds, soya sauce",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bombay Potatoes",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, onion, garlic, a sprig of curry leaves, each, turmeric powder, chilli powder",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Crispy Potatoes",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "sized potatoes, onions, cream, butter",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Thai Coconut Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "long beans, straw mushrooms, carrots, head cabbage, grated coconut, onion, dry red chillies, thai lemon leaves",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Mock Duck Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "mock duck, onion, garlic, tamarind extract, sugar, red chillies, coconut milk, lemon juice",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Braised Aubergines",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "aubergines, garlic-ginger paste, red chillies, vinegar, soya sauce, cornstarch, sesame oil",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Stuffed Aubergines",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "aubergines, tomatoes, potatoes, frozen peas, onions, green chillies, garlic pounded, fresh coriander",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spicy Beans Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "black beans, red kidney beans, yogurt, ginger, garlic, tomato paste, a pinch of garam masala, butter",
+   "prep_time": "~4 hr 10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Tomato Timbales",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "medium-sized round tomatoes, potatoes, green peas, bread slices, garam masala, turmeric powder, chilli powder",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cheese Cones Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cheese cones, home-made cottage, flour, baking powder, green chillies, fresh coriander, curry, onions",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable Beans and Lentil Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "yellow split peas, green split peas, chick peas, masoor, black-eyed beans, cauliflower, shallots, onions",
+   "prep_time": "~6 hr 20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable Makhanwala",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, french beans, cauliflower, carrots, green peas, onions, fresh cream, milk",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Lo Han Chai",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "parboiled vegetables, canned foodstuff, white fungus soaked, cornstarch, soya sauce, ajinomoto",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cottage Cheese and Spinach",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "spinach leaves, onion, tomatoes, ginger-garlic paste, green chillies, vegetable fat, home-made",
+   "prep_time": "~25 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Stuffed Tomatoes and Peppers",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "tomatoes, peppers, onion, potatoes, garlic, tomato paste, parsley",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cabbage Rolls in Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cabbage rolls, head cabbage, potatoes, green peas, chick pea flour, chilli powder, soda bicarbonate, curry",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Yogurt Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "chick pea flour fritters, chick pea flour, yogurt, turmeric powder, ginger-garlic paste, cumin seeds, chilli powder, onion",
+   "prep_time": "~25 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Macaroni Cheese Bake",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "elbow macaroni, margarine, to 1/2 cup flour, milk, processed cheese",
+   "prep_time": "~35 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cabbage Stir-fried",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cabbage, ghee, cumin seeds, turmeric powder, red chilli powder",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Cabbage with Tomatoes",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onions sliced, cabbage shredded, vinegar, sugar, caraway seeds, tomatoes, flour",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Paneer Tikka",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "home-made cottage, thumb-size piece ginger, garlic, onion, lemon juice, black cumin seeds, whole cardamom, powdered cloves",
+   "prep_time": "~25 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Baked Spinach",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "vegetable fat, chopped onions, bunches, cheddar cheese, cream cheese, garlic powder, oregano, basil",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spinach Quiche",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "home-made cottage, two cups spinach, onion, spring onion, ginger-garlic paste, tomato paste, pack, green chilli",
+   "prep_time": "~45 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spaghetti Surprise",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "spaghetti, onions, tomatoes, milk, green chillies, tomato sauce, butter, grated cheddar cheese",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Fried Potatoes",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Aubergines in Spicy Gravy",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "aubergines, onions, coconut, coriander seeds, green chillies, ginger, garlic, jaggery",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Braised Bean Curd and Broccoli",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "hot sesame oil, cubed bean curd, broccoli flowerets, cornstarch dissolved in, tamarind extract, hot red, grated fresh ginger, garlic minced",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Pampanguanian Pancit",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice vermicelli, head cabbage, carrots, broad beans, slabs beancurd, ajinomoto, garlic, soya sauce",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vermicelli Treat",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "wheat vermicelli, milk, sugar, chopped nuts",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Macaroni - Saigon Style",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cooked elbow macaroni, onions, tomatoes, tomato ketchup, red chilli powder",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Yummy Yam",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "yam, peas, tomatoes, onion, ghee, indian bay leaf, fresh coriander, sauce",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spicy Peas Potato Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, green peas, tomatoes, onions, turmeric powder, chilli powder, garam masala, cumin",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Baked Potatoes",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cream of vegetable soup, paprika, pepper, baking potatoes, grated cheddar cheese",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spicy Okras",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "okras, onion, tomatoes, turmeric powder, chilli powder, coriander powder, garam masala",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Pureed Aubergines (Baingan Bartha)",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "aubergines, garlic, onion, green chillies, tomatoes, lemon juice, chopped parsley, olive oil",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Garbanzos and Potato Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "tin garbanzos, potatoes, onion, tomatoes, lemon juice, cinnamon, cumin, coriander powder",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Carrots Crumble",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "carrots, onions, bread crumbs, butter, fresh cream",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Bean Curd with Mushrooms",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "button mushrooms, bean curd, spring onion, soya sauce, ajinomoto, tomato ketchup, chilli sauce, garlic",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spinach & Cauliflower in Cheese",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "spinach, head cauliflower, glass, tomatoes, onion",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable Lasagne",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "lasagne noodles, cottage cheese, mozzarella cheese, cream cheese, grated parmesan cheese spread a, milk, minced onion, dried basil",
+   "prep_time": "~1 hr",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Mushroom Mystery",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "butter, milk, cream, grated cheddar cheese, yogurt, onion, button mushrooms, dry mustard",
+   "prep_time": "~20 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Vegetable au Gratin",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "head of cauliflower, diced carrots, potatoes, butter, all-purpose flour, pepper, & 1/2 cups milk, peas",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Navratan Curry",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "carrots, frozen green peas, green beans, potatoes, cauliflower, capsicum, onions, tomatoes",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Potatoes in Spicy Gravy",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, yogurt, vegetable fat, cumin seeds, turmeric powder, garam masala, sugar, curry leaves",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "String Beans",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "string beans, tomatoes, garlic, soya sauce",
+   "prep_time": "~25 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Baturas",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, yogurt, soda bicarbonate, vegetable fat",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Stuffed Parathas",
+   "meal_types": [
+    "Breakfast",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, wheat flour, milk, yogurt, ghee, potatoes, green chillies, fresh coriander",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Puris",
+   "meal_types": [
+    "Breakfast",
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "wheat flour",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Brazilian Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "long grain rice, vegetable oil, onion chopped, garlic",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Burmese Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, roasted peanuts, grated coconut, coconut milk., sesame seeds, thumb-sized piece ginger, corn oil, fresh coriander",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Onion Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "basmati, ghee, vegetable oil, onions, lemon juice, indian bay leaf, whole cloves, stick of cinnamon",
+   "prep_time": "~10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Green Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, green peas soup, chopped celery, chopped onion, broccoli florets, shredded cheddar cheese",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Indian Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "basmati, peas, onion finely chopped, garlic-ginger paste, big carrot, bay leaf, cardamoms, cloves",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Italian Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, vegetable stock, butter, grated cheese, paprika, pepper",
+   "prep_time": "~1 hr 10 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Indonesian Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, coconut milk, turmeric powder, cardamom pods, curry leaves, onion, powdered cloves",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Japanese Rice Cakes",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cooked rice, vinegar, sugar, horseradish, soya sauce, cooked dried gourd, cooked dried mushrooms",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Baked Curry Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "long grain rice, home-made cottage, green peas, cumin seeds, green chillies, ghee, curry, onion",
+   "prep_time": "~40 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Thai Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, lime slices, lemon leaves",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Philippine Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cooked rice, garlic, soya sauce, spring onion",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Lemon Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "long grain rice, yellow mustard seeds, indian bay leaf, cloves, inch cinnamon stick, turmeric powder, rind of one lemon, coconut",
+   "prep_time": "~1 hr",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Chinese Rice Served in a Pineapple",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "whole fresh pineapple, long grain rice cooked, peas, carrots, onions, spring onions, soya sauce",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Spanish Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "uncooked rice, onions, tomatoes, capsicums, garlic, green chillies, turmeric powder, paprika",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Mexican Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "rice, green chillies, garlic, fresh coriander, onion, grated cheddar cheese, cream, baby carrots",
+   "prep_time": "",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "German Rice",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cucumbers, white sauce, tomatoes diced, crushed basil, onion chopped, white rice, cumin seeds, grated cheddar cheese",
+   "prep_time": "~15 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Rice with Mock Duck",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onions, vegetable fat, white rice, chopped green pepper, chilli powder, tomatoes, frozen green peas, mock duck",
+   "prep_time": "~30 min",
+   "book": "Creative Vegetarian Cooking"
+  },
+  {
+   "name": "Blueberry Breakfast Scones",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "self-raising flour, oatbran, baking powder, caster sugar, milk, butter, blueberries",
+   "prep_time": "~25 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Breakfast Potato Scone",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, butter, plain flour, baking powder, cheddar cheese, fresh chives",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Banana & Blueberry Porridge",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "butter, oats, milk, banana, blueberries, ground cinnamon, honey, vanilla extract",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "French Toast",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "soya milk, silken tofu, olive oil, maple syrup, ground cinnamon, orange, bread",
+   "prep_time": "",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Pancakes",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, gram flour, baking powder, milk, sunflower oil, garlic, mushrooms, spinach",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Veggie Lincolnshires",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "gram flour, chestnuts, firm tofu, onion, cheddar cheese, fresh rosemary, soy sauce, lemon juice",
+   "prep_time": "~35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Scrambled Tofu",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, red bell pepper, courgette, olive oil, mushrooms, soy sauce, vegetable stock powder, firm tofu",
+   "prep_time": "~25 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Breakfast Potatoes",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, olive oil, garlic, onion, dried thyme",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Full English Breakfast",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "garlic, mushrooms, olive oil, dried thyme, tomatoes, gram flour, chestnuts, firm tofu",
+   "prep_time": "~1 hr",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "BTLT (Baked Tofu, Lettuce & Tomato Sandwich)",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "baked tofu, bread, vegan mayonnaise, lettuce, tomato, firm tofu, lemon, light soy sauce",
+   "prep_time": "~40 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Aloo Paratha",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "wholemeal flour, potatoes, coriander, garam masala, cumin seeds, chilli flakes",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Autumn Minestrone Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, celery, butternut squash, potatoes, cabbage, olive oil, canned chopped tomatoes",
+   "prep_time": "~35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Hearty Vegetable Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onions, garlic, celery, leek, sweet potato, butternut squash, carrots, olive oil",
+   "prep_time": "~40 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Vegetable & Dumpling Stew",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "self-raising flour, butter, pepper, aubergine, onion, garlic, celery, leek",
+   "prep_time": "~1 hr 5 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Leek & Potato Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, potatoes, leeks, butter, vegetable stock, fresh thyme, double cream",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "French Onion Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "butter, onions, vegetable stock, bay leaf, fresh parsley, fresh thyme, yeast extract, wholemeal flour",
+   "prep_time": "~45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Roasted Tomato & Basil Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "red onion, garlic, cherry, extra virgin olive oil, balsamic vinegar, vegetable stock, fresh basil",
+   "prep_time": "~40 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Spicy Carrot Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "garlic, olive oil, ground cumin, ground cayenne pepper, onion, celery, carrots, potatoes",
+   "prep_time": "~45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Celery & Cashew Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "celery, onions, olive oil, potatoes, vegetable stock, cashew nuts, fresh parsley",
+   "prep_time": "~40 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Cheese & Broccoli Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, onion, broccoli, double cream, blue cheese",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Ratatouille",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, aubergines, tomatoes, courgettes, yellow, olive oil, dried basil",
+   "prep_time": "~1 hr 5 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Mushroom & Tarragon Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, butter, field, dried tarragon, vegetable stock, milk, single cream",
+   "prep_time": "~45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Chilli Bean Stew",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, celery, green pepper, carrot, olive oil, canned red kidney beans, dried basil",
+   "prep_time": "~50 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Beetroot & Thyme Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, carrot, sweet potato, beetroot, garlic, olive oil, fresh thyme, vegetable stock",
+   "prep_time": "~35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Spiced Butternut Squash Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "butternut squash, onions, garlic, butter, ground cumin, vegetable stock, double cream",
+   "prep_time": "~30 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Watercress Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, potato, olive oil, vegetable stock, fresh watercress, bay leaves, carrot, parsnip",
+   "prep_time": "~35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Gazpacho",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "tomatoes, onion, garlic, spring onions, green pepper, cucumber, lemon, lime",
+   "prep_time": "~2 hr 10 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Hot & Sour Bean Curd & Noodle Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "red chillies, ginger, lemongrass, onion, lemon, light soy sauce, tofu, mushrooms",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Pea & Mint Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "butter, peas, vegetable stock, fresh mint",
+   "prep_time": "~40 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Delicate Tomato Soup",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, celery, apple, beetroot, tomatoes",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Irish Stew with Seitan",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "olive oil, onions, celery, potatoes, baby carrots, leek, garlic, bay leaves",
+   "prep_time": "~45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Carrot & Beetroot Salad with Toasted Seeds",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "beetroot, carrots, apples, celery, red cabbage, parsley, pumpkin seeds, oranges",
+   "prep_time": "",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Avocado, Couscous & Tomato Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "couscous, vegetable stock, avocados, canned chickpeas, cherry tomatoes, mozzarella cheese, lemon juice",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Black Bean & Brown Rice Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "brown rice, cherry tomatoes, yellow pepper, red onion, garlic, lemon, dried basil",
+   "prep_time": "~9 hr 10 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Chickpea Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "couscous, vegetable stock, canned chickpeas, sun-dried tomatoes, feta cheese, pine nuts, lemon, fresh mint",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Toasted Halloumi & Pine Nut Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "pine nuts, red onions, rocket leaves, capers, baby plum tomatoes, fresh tarragon, fresh parsley, olive oil",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Roast Pear, Hazelnut & Blue Cheese Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "red onion, pears, unsalted butter, rocket, hazelnuts, mild blue cheese, white wine vinegar, dijon mustard",
+   "prep_time": "~40 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "UK Potato Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "new potatoes, spring onions, green olives, chives, gherkin, lemon juice, soya milk, dijon mustard",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Pasta Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "conchiglie pasta, yellow cherry tomatoes, red cherry tomatoes, black olives, fresh chives, fresh basil, cucumber, garlic",
+   "prep_time": "",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Sweet Potato & Green Bean Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "green beans, sweet potatoes, garlic, fresh thyme, red gem lettuce, baby spinach, rocket, cherry tomatoes",
+   "prep_time": "~30 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Quinoa & Broad Bean Salad",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "quinoa, frozen peas, flaked almonds, olive oil, lemon, feta cheese, fresh mint",
+   "prep_time": "~55 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Coleslaw",
+   "meal_types": [
+    "Lunch"
+   ],
+   "diet": "veg",
+   "ingredients": "green cabbage, red cabbage, carrots, red onion, plain yoghurt, honey, mustard, milk",
+   "prep_time": "",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Lancashire Hot Pot",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, parsnips, carrots, celery, olive oil, tomato purée, pearl barley",
+   "prep_time": "~1 hr 20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Mushroom Stroganoff",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "button mushrooms, onion, celery, unsalted butter, wholemeal flour, vegetable stock powder, bay leaf, dried thyme",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Pizza",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, caster sugar, fast action dried yeast, olive oil, tomatoes, tomato purée, mozzarella cheese, fresh basil",
+   "prep_time": "~30 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Spinach Cannelloni",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "frozen spinach, butter, italian hard cheese, garlic, cottage cheese, dried dill, ground nutmeg, lemon juice",
+   "prep_time": "~1 hr",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Soya Butter Masala",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "soya chunks, yoghurt, lime, turmeric powder, cinnamon powder, ground paprika, black pepper, butter",
+   "prep_time": "~4 hr 25 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Goat’s Cheese, Tomato & Spinach Tarts",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "spinach, puff pastry, passata, olive tapenade, goat’s cheese, red onion, olive oil, sugar",
+   "prep_time": "~45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Sage & Onion Tart",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "puff pastry, dried sage, extra mature cheddar cheese, milk",
+   "prep_time": "~50 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Vegetable & Tofu Pie",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, butter, tofu, milk, arrowroot, ground nutmeg, garlic, honey",
+   "prep_time": "~3 hr 5 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Mushroom Risotto",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "mushrooms, onion, cheese, butter, risotto rice, vegetable stock",
+   "prep_time": "~30 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Tofu Kebabs",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "garlic, olive oil, lemon juice, tomato purée, dried oregano, firm tofu, mushrooms, courgettes",
+   "prep_time": "~4 hr 20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Portobello Mushrooms & Halloumi",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "portobello mushrooms, halloumi cheese, ginger, garlic, olive oil",
+   "prep_time": "",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Shepherd’s Lentil Pie",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onions, garlic, carrots, celery, chestnut mushrooms, butter, bay leaves, dried thyme",
+   "prep_time": "~2 hr",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Cornish Pasties",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "plain flour, butter, potatoes, swede, onions, leeks, strong cheese, onion",
+   "prep_time": "~1 hr 45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Macaroni Cheese",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "macaroni, olive oil, butter, plain flour, dry mustard, milk, cheese",
+   "prep_time": "",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Sweet & Sour Tofu",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cornflour, pineapple juice, soy sauce, ketchup, vinegar, sugar, olive oil, tofu",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Cheese & Parsnip Flan",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "parsnips, butter, silken tofu, onions, garlic, strong cheddar cheese",
+   "prep_time": "~30 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Deep Fried Tofu",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "firm tofu, bread, gram flour, cumin seeds, coriander powder, turmeric powder, garam masala",
+   "prep_time": "~10 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Lentil Burgers",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "brown lentils, onions, carrots, fresh parsley, potatoes, breadcrumbs",
+   "prep_time": "~1 hr 15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Spinach & Mushroom Lasagne",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "lasagne, spinach, butter, dried marjoram, ricotta cheese, mushrooms, vegetable stock, soy sauce",
+   "prep_time": "~1 hr 25 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Spaghetti Bolognese",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onion, garlic, red bell pepper, courgette, mushrooms, olive oil, soya mince, bay leaves",
+   "prep_time": "~50 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Spaghetti & Tofu Balls",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "firm tofu, onion, garlic, fresh parsley, dijon mustard, ground cumin, soy sauce, ground almonds",
+   "prep_time": "~1 hr",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Bubble & Squeak",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "potatoes, brussels sprouts, butter, plain flour, olive oil",
+   "prep_time": "~35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Stir-Fry Noodles with Tofu",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "ginger, spring onions, button mushrooms, olive oil, sesame oil, pak choi, rice noodles, fresh coriander",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Asparagus Quiche",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "canned asparagus spears, cheese, flour, milk",
+   "prep_time": "~45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Creamy Farfalle with Courgettes & Lemon",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "courgettes, olive oil, farfalle, lemon, ricotta cheese",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Jerk Tofu",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "ginger, garlic, onion, red chillies, ground allspice, dried thyme, ground cayenne pepper, ground ginger",
+   "prep_time": "~8 hr 45 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Nut Wellington",
+   "meal_types": [
+    "Lunch",
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "puff pastry, onion, celery, garlic, sunflower oil, walnuts, cashew nuts, chestnut purée",
+   "prep_time": "~1 hr 15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Pan Haggerty (Potato Casserole)",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "onions, potatoes, cheddar cheese, butter",
+   "prep_time": "~1 hr 5 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Baked Root Vegetables & Sweet Ginger Glaze",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "sweet potato, potato, carrot, parsnip, turnip, olive oil, butter, caster sugar",
+   "prep_time": "~1 hr 35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Roasted Garlic Mushrooms",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "button mushrooms, garlic, olive oil, salt and pepper, unsalted butter, lemon juice, fresh flat leaf parsley",
+   "prep_time": "~30 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Cauliflower Cheese",
+   "meal_types": [
+    "Dinner"
+   ],
+   "diet": "veg",
+   "ingredients": "cauliflower, milk, flour, butter, cheddar cheese",
+   "prep_time": "~35 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Avocado & Goat’s Cheese Crostinis",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "baguette, garlic, avocado, goat’s cheese, fresh basil, red onion, lemon juice, extra virgin olive oil",
+   "prep_time": "~15 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Cheese Scones",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "makes 10, self-raising flour, baking powder, butter, cheddar cheese, milk, ground paprika, sun-dried tomatoes",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Crumpets",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "whole milk, strong white flour, plain flour, fast action dried yeast, fine sea salt, caster sugar, bicarbonate of soda",
+   "prep_time": "~1 hr",
+   "book": "Vegetarian Cooking - British Taste"
+  },
+  {
+   "name": "Tomato & Basil Bruschetta",
+   "meal_types": [
+    "Breakfast"
+   ],
+   "diet": "veg",
+   "ingredients": "cherry, fresh basil, lemon, sourdough, garlic, podded broad beans, butter, olive oil",
+   "prep_time": "~20 min",
+   "book": "Vegetarian Cooking - British Taste"
+  }
+ ]
+}
