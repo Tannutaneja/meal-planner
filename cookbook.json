@@ -215,14 +215,15 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Lentil Soup",
+   "name": "Masoor Dal Shorba",
    "meal_types": [
     "Dinner"
    ],
    "diet": "veg",
    "ingredients": "masoor, onions, tomatoes, shallots, ghee, garlic, ginger, red chillies",
    "prep_time": "~30 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Lentil Soup"
   },
   {
    "name": "Cream of Tomato Soup",
@@ -355,14 +356,15 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Cheese Cutlets",
+   "name": "Paneer Aloo Tikki",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "potatoes, cottage cheese, chopped fresh coriander, green chillies, cabbage, onions, bread, plain flour",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Cheese Cutlets"
   },
   {
    "name": "Onion Cakes",
@@ -375,44 +377,48 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Semolina Cakes",
+   "name": "Rava Dhokla",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "semolina, sour yogurt, turmeric powder, soda bicarbonate, mustard seeds, curry leaves, red chilli powder",
    "prep_time": "~40 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Semolina Cakes"
   },
   {
-   "name": "Potato Bonda",
+   "name": "Aloo Bonda",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "besan, sized potatoes, onion, ginger paste, fresh coriander, green chillies, garam masala, roasted cumin seeds",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Potato Bonda"
   },
   {
-   "name": "Lentil Bonda",
+   "name": "Urad Dal Bonda",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "urad dal, green chillies, parsley, grated coconut, ginger, peppercorns",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Lentil Bonda"
   },
   {
-   "name": "Vegetarian Omelette",
+   "name": "Cheese Besan Chilla",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "chick pea flour, all-purpose flour, tomato, grated cheddar cheese, soda bicarbonate, fresh coriander leaves, finely chopped onion, red chilli powder",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Vegetarian Omelette"
   },
   {
    "name": "Idli Sambar",
@@ -436,54 +442,59 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Spiced Chick Peas",
+   "name": "Masala Chana",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "chick peas, garam masala, lemon juice, green chilli, onion, tomato, parsley",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Spiced Chick Peas"
   },
   {
-   "name": "Bean Curd Fritters",
+   "name": "Tofu Pakora",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "soft bean curd, chick pea flour, a pinch of soda bicarbonate, chilli powder, green chilli, coriander, soya sauce, sesame oil",
    "prep_time": "~15 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Bean Curd Fritters"
   },
   {
-   "name": "Bread Rolls",
+   "name": "Bread Roll",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "bread slices, cheddar cheese, onion, fresh coriander, green chillies",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Bread Rolls"
   },
   {
-   "name": "Lentil Balls in Yogurt (Dahi Wadas)",
+   "name": "Dahi Wada",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "urad dal, yogurt, chilli powder, cumin seeds, fresh coriander, green chillies, cumin powder, pepper",
    "prep_time": "~4 hr 10 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Lentil Balls in Yogurt (Dahi Wadas)"
   },
   {
-   "name": "Frankee",
+   "name": "Aloo Frankie",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "plain flour, bread, potatoes, peas, green chillies, lemon juice, garam masala, grated cheddar cheese",
    "prep_time": "~10 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Frankee"
   },
   {
    "name": "Spinach Rolls",
@@ -496,44 +507,48 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Vegetable Samosas",
+   "name": "Samosa",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "flour, vegetable fat, potatoes, frozen peas, chopped coriander, chilli powder, turmeric powder, garam masala",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Vegetable Samosas"
   },
   {
-   "name": "Vegetable Fritters",
+   "name": "Mix Veg Pakora",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "your choice of vegetables, besan, turmeric powder, chilli powder, coriander seeds, pomegranate seeds, a pinch of soda bicarbonate",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Vegetable Fritters"
   },
   {
-   "name": "Vegetable Cutlets",
+   "name": "Veg Cutlet",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "potatoes, carrots, frozen peas, onion, capsicum, breadcrumbs, flour, lemon juice",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Vegetable Cutlets"
   },
   {
-   "name": "Semolina Vegetable Combo (Uppama)",
+   "name": "Vegetable Upma",
    "meal_types": [
     "Breakfast"
    ],
    "diet": "veg",
    "ingredients": "semolina, sprouted green beans, carrots, green chillies, fresh coriander, coconut, lemon juice, lentils",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Semolina Vegetable Combo (Uppama)"
   },
   {
    "name": "Chinese Chop Suey",
@@ -591,7 +606,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Bombay Potatoes",
+   "name": "Bombay Aloo",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -599,7 +614,8 @@
    "diet": "veg",
    "ingredients": "potatoes, onion, garlic, a sprig of curry leaves, each, turmeric powder, chilli powder",
    "prep_time": "~15 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Bombay Potatoes"
   },
   {
    "name": "Crispy Potatoes",
@@ -646,7 +662,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Stuffed Aubergines",
+   "name": "Bharwa Baingan",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -654,10 +670,11 @@
    "diet": "veg",
    "ingredients": "aubergines, tomatoes, potatoes, frozen peas, onions, green chillies, garlic pounded, fresh coriander",
    "prep_time": "~30 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Stuffed Aubergines"
   },
   {
-   "name": "Spicy Beans Curry",
+   "name": "Dal Makhani Style Beans",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -665,7 +682,8 @@
    "diet": "veg",
    "ingredients": "black beans, red kidney beans, yogurt, ginger, garlic, tomato paste, a pinch of garam masala, butter",
    "prep_time": "~4 hr 10 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Spicy Beans Curry"
   },
   {
    "name": "Tomato Timbales",
@@ -690,7 +708,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Vegetable Beans and Lentil Curry",
+   "name": "Mixed Dal with Vegetables",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -698,10 +716,11 @@
    "diet": "veg",
    "ingredients": "yellow split peas, green split peas, chick peas, masoor, black-eyed beans, cauliflower, shallots, onions",
    "prep_time": "~6 hr 20 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Vegetable Beans and Lentil Curry"
   },
   {
-   "name": "Vegetable Makhanwala",
+   "name": "Veg Makhanwala",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -709,7 +728,8 @@
    "diet": "veg",
    "ingredients": "potatoes, french beans, cauliflower, carrots, green peas, onions, fresh cream, milk",
    "prep_time": "~20 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Vegetable Makhanwala"
   },
   {
    "name": "Lo Han Chai",
@@ -723,7 +743,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Cottage Cheese and Spinach",
+   "name": "Palak Paneer",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -731,7 +751,8 @@
    "diet": "veg",
    "ingredients": "spinach leaves, onion, tomatoes, ginger-garlic paste, green chillies, vegetable fat, home-made",
    "prep_time": "~25 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Cottage Cheese and Spinach"
   },
   {
    "name": "Stuffed Tomatoes and Peppers",
@@ -756,7 +777,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Yogurt Curry",
+   "name": "Kadhi Pakora",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -764,7 +785,8 @@
    "diet": "veg",
    "ingredients": "chick pea flour fritters, chick pea flour, yogurt, turmeric powder, ginger-garlic paste, cumin seeds, chilli powder, onion",
    "prep_time": "~25 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Yogurt Curry"
   },
   {
    "name": "Macaroni Cheese Bake",
@@ -778,7 +800,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Cabbage Stir-fried",
+   "name": "Patta Gobhi Sabzi",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -786,7 +808,8 @@
    "diet": "veg",
    "ingredients": "cabbage, ghee, cumin seeds, turmeric powder, red chilli powder",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Cabbage Stir-fried"
   },
   {
    "name": "Cabbage with Tomatoes",
@@ -855,7 +878,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Aubergines in Spicy Gravy",
+   "name": "Baingan Masala",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -863,7 +886,8 @@
    "diet": "veg",
    "ingredients": "aubergines, onions, coconut, coriander seeds, green chillies, ginger, garlic, jaggery",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Aubergines in Spicy Gravy"
   },
   {
    "name": "Braised Bean Curd and Broccoli",
@@ -921,7 +945,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Spicy Peas Potato Curry",
+   "name": "Aloo Matar",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -929,7 +953,8 @@
    "diet": "veg",
    "ingredients": "potatoes, green peas, tomatoes, onions, turmeric powder, chilli powder, garam masala, cumin",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Spicy Peas Potato Curry"
   },
   {
    "name": "Baked Potatoes",
@@ -943,7 +968,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Spicy Okras",
+   "name": "Masala Bhindi",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -951,10 +976,11 @@
    "diet": "veg",
    "ingredients": "okras, onion, tomatoes, turmeric powder, chilli powder, coriander powder, garam masala",
    "prep_time": "~15 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Spicy Okras"
   },
   {
-   "name": "Pureed Aubergines (Baingan Bartha)",
+   "name": "Baingan Bharta",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -962,10 +988,11 @@
    "diet": "veg",
    "ingredients": "aubergines, garlic, onion, green chillies, tomatoes, lemon juice, chopped parsley, olive oil",
    "prep_time": "~10 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Pureed Aubergines (Baingan Bartha)"
   },
   {
-   "name": "Garbanzos and Potato Curry",
+   "name": "Chana Aloo",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -973,7 +1000,8 @@
    "diet": "veg",
    "ingredients": "tin garbanzos, potatoes, onion, tomatoes, lemon juice, cinnamon, cumin, coriander powder",
    "prep_time": "~15 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Garbanzos and Potato Curry"
   },
   {
    "name": "Carrots Crumble",
@@ -1042,7 +1070,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Navratan Curry",
+   "name": "Navratan Korma",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -1050,10 +1078,11 @@
    "diet": "veg",
    "ingredients": "carrots, frozen green peas, green beans, potatoes, cauliflower, capsicum, onions, tomatoes",
    "prep_time": "~15 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Navratan Curry"
   },
   {
-   "name": "Potatoes in Spicy Gravy",
+   "name": "Dum Aloo",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -1061,7 +1090,8 @@
    "diet": "veg",
    "ingredients": "potatoes, yogurt, vegetable fat, cumin seeds, turmeric powder, garam masala, sugar, curry leaves",
    "prep_time": "~15 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Potatoes in Spicy Gravy"
   },
   {
    "name": "String Beans",
@@ -1075,17 +1105,18 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Baturas",
+   "name": "Bhature",
    "meal_types": [
     "Lunch"
    ],
    "diet": "veg",
    "ingredients": "plain flour, yogurt, soda bicarbonate, vegetable fat",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Baturas"
   },
   {
-   "name": "Stuffed Parathas",
+   "name": "Stuffed Paratha",
    "meal_types": [
     "Breakfast",
     "Dinner"
@@ -1093,10 +1124,11 @@
    "diet": "veg",
    "ingredients": "plain flour, wheat flour, milk, yogurt, ghee, potatoes, green chillies, fresh coriander",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Stuffed Parathas"
   },
   {
-   "name": "Puris",
+   "name": "Puri",
    "meal_types": [
     "Breakfast",
     "Lunch"
@@ -1104,7 +1136,8 @@
    "diet": "veg",
    "ingredients": "wheat flour",
    "prep_time": "",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Puris"
   },
   {
    "name": "Brazilian Rice",
@@ -1129,7 +1162,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Onion Rice",
+   "name": "Pyaaz Pulao",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -1137,7 +1170,8 @@
    "diet": "veg",
    "ingredients": "basmati, ghee, vegetable oil, onions, lemon juice, indian bay leaf, whole cloves, stick of cinnamon",
    "prep_time": "~10 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Onion Rice"
   },
   {
    "name": "Green Rice",
@@ -1151,7 +1185,7 @@
    "book": "Creative Vegetarian Cooking"
   },
   {
-   "name": "Indian Rice",
+   "name": "Veg Pulao",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -1159,7 +1193,8 @@
    "diet": "veg",
    "ingredients": "basmati, peas, onion finely chopped, garlic-ginger paste, big carrot, bay leaf, cardamoms, cloves",
    "prep_time": "~30 min",
-   "book": "Creative Vegetarian Cooking"
+   "book": "Creative Vegetarian Cooking",
+   "book_title": "Indian Rice"
   },
   {
    "name": "Italian Rice",
@@ -1634,14 +1669,15 @@
    "book": "Vegetarian Cooking - British Taste"
   },
   {
-   "name": "Chickpea Salad",
+   "name": "Chickpea Couscous Salad",
    "meal_types": [
     "Lunch"
    ],
    "diet": "veg",
    "ingredients": "couscous, vegetable stock, canned chickpeas, sun-dried tomatoes, feta cheese, pine nuts, lemon, fresh mint",
    "prep_time": "~15 min",
-   "book": "Vegetarian Cooking - British Taste"
+   "book": "Vegetarian Cooking - British Taste",
+   "book_title": "Chickpea Salad"
   },
   {
    "name": "Toasted Halloumi & Pine Nut Salad",
@@ -1890,7 +1926,7 @@
    "book": "Vegetarian Cooking - British Taste"
   },
   {
-   "name": "Deep Fried Tofu",
+   "name": "Masala Tofu Fry",
    "meal_types": [
     "Lunch",
     "Dinner"
@@ -1898,7 +1934,8 @@
    "diet": "veg",
    "ingredients": "firm tofu, bread, gram flour, cumin seeds, coriander powder, turmeric powder, garam masala",
    "prep_time": "~10 min",
-   "book": "Vegetarian Cooking - British Taste"
+   "book": "Vegetarian Cooking - British Taste",
+   "book_title": "Deep Fried Tofu"
   },
   {
    "name": "Lentil Burgers",

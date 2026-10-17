@@ -158,8 +158,16 @@ def plan_ref(code, ds):
 
 
 def fp(*parts):
-    """Safe Firestore field path (handles names with spaces etc.)."""
-    return firestore.FieldPath(*parts).to_api_repr()
+    """Firestore field path like 'votes.breakfast'. Built by hand because
+    firestore.FieldPath is not exposed by firebase_admin. Unusual segments get backticks."""
+    out = []
+    for p in parts:
+        p = str(p)
+        if re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", p):
+            out.append(p)
+        else:
+            out.append("`" + p.replace("\\", "\\\\").replace("`", "\\`") + "`")
+    return ".".join(out)
 
 
 def get_group(code):
@@ -386,6 +394,7 @@ def card_from(r, source, reason="", last_made=None, added_by=""):
         "last_made": last_made,
         "added_by": added_by,
         "book": r.get("book", "") or "",
+        "book_title": r.get("book_title", "") or "",
     }
 
 
@@ -411,9 +420,20 @@ def build_pool(group, meal_type, last_made, counts, mode="quick"):
     return eligible, rule_order
 
 
+def _key(name):
+    return re.sub(r"[^a-z]", "", norm(name).replace("chilla", "cheela").replace("bharta", "bartha"))
+
+
+def overlaps(name, keys):
+    """True if a dish clearly matches one the group already has (same name or one inside the other)."""
+    k = _key(name)
+    return bool(k) and any(k == h or (len(k) >= 6 and (k in h or h in k)) for h in keys)
+
+
 def cookbook_candidates(group, meal_type, last_made, mode="quick", limit=12):
     allowed = DIET_ALLOWED.get(group.get("preference", "veg"), {"veg"})
-    have = {norm(r["name"]) for r in group.get("recipes", [])}
+    have = {_key(r["name"]) for r in group.get("recipes", [])}
+    recent = {_key(n) for n, days in last_made.items() if days < EXCLUDE_DAYS}
     out = []
     for r in load_cookbook():
         mts = r.get("meal_types") or MEAL_TYPES
@@ -421,8 +441,7 @@ def cookbook_candidates(group, meal_type, last_made, mode="quick", limit=12):
             continue
         if norm_diet(r.get("diet", "veg")) not in allowed:
             continue
-        k = norm(r["name"])
-        if k in have or last_made.get(k, 999) < EXCLUDE_DAYS:
+        if overlaps(r["name"], have) or overlaps(r["name"], recent):
             continue
         out.append(r)
     random.shuffle(out)
@@ -541,6 +560,7 @@ For each meal below:
 1. kitchen_picks: order the kitchen_pool from best to worst choice for today (max {MAX_KITCHEN}). Use exact names from kitchen_pool only. Put dishes that fit today's cooking style first, and prefer variety vs recent days (don't repeat yesterday's main ingredient).
 2. cookbook_picks: choose up to 3 from cookbook_candidates (exact names) that fit today's cooking style and are practical with ingredients easily found in India. Empty list if none given.
 3. new_recipes: invent exactly 3 practical dishes that fit today's cooking style and are NOT in kitchen_pool, cookbook_candidates, already_known_dishes, or recent history. Must follow the diet rule. Short comma-separated ingredients, realistic prep_time like "20 min".
+Names: use the name an Indian household would use, in Hindi or the regional name if that is how it is known (e.g. "Dahi Wada", not "Lentil balls in yogurt"; "Aloo Matar", not "Potato and pea curry"; "Rava Dhokla", not "Semolina cakes"). For dishes from other cuisines, use the name common in India (e.g. "Pasta Arrabbiata", "Veg Hakka Noodles").
 Every reason must be under 12 words and specific to this group.
 
 Meals:
@@ -1043,43 +1063,109 @@ def render_sidebar(code, group):
 # ===================================================================
 # PAGE: Daily planner
 # ===================================================================
-SOURCE_BADGE = {
-    "member": ":blue-background[➕ added by {who}]",
-    "cookbook": ":violet-background[📖 {book}]",
-    "ai": ":orange-background[✨ New idea]",
+KITCHEN_VISIBLE = 4   # kitchen cards shown before "Show more"
+
+# Layout-only CSS. Colours are translucent greys/greens, so they read well in light AND dark mode.
+CARD_CSS = """
+<style>
+[class*="st-key-card_"] {
+  border: 1px solid rgba(128,128,128,.28);
+  border-radius: .75rem;
+  padding: .5rem .5rem .5rem .8rem;
+  gap: .15rem !important;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  animation: mpIn .22s ease-out both;
 }
+[class*="st-key-card_"]:hover { border-color: rgba(128,128,128,.55); box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+[class*="st-key-card_"][class*="_lead"] { border-color: rgba(46,158,107,.75); }
+[class*="st-key-card_"][class*="_mine"] { background: rgba(46,158,107,.09); }
+/* keep text + button on one line, even on phones */
+[class*="st-key-card_"] [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: .5rem !important; }
+[class*="st-key-card_"] [data-testid="stColumn"] { min-width: 0 !important; }
+[class*="st-key-card_"] [data-testid="stColumn"]:first-child { flex: 1 1 auto !important; width: auto !important; }
+[class*="st-key-card_"] [data-testid="stColumn"]:last-child { flex: 0 0 auto !important; width: auto !important; }
+[class*="st-key-card_"] p { margin: 0 !important; font-size: .92rem; line-height: 1.35; overflow-wrap: anywhere; }
+[class*="st-key-card_"] p:first-child strong { font-size: 1rem; }
+[class*="st-key-card_"] button { min-height: 2.4rem; padding: .25rem .9rem; white-space: nowrap; }
+[class*="st-key-card_"] button:active { transform: scale(.96); }
+@keyframes mpIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  [class*="st-key-card_"], [class*="st-key-card_"] button { animation: none; transition: none; }
+}
+</style>
+"""
+
+
+def inject_css():
+    st.markdown(CARD_CSS, unsafe_allow_html=True)
+
+
+def clip(t, n):
+    t = (t or "").strip()
+    return t if len(t) <= n else t[: n - 1].rstrip(" ,") + "…"
+
+
+def short_book(b):
+    b = b or "Cookbook"
+    return b.split(" - ")[-1].strip() if " - " in b else " ".join(b.split()[:2])
 
 
 def render_card(c, mk, idx, votes, counts, top, code, group, meal_type, ds):
+    """Compact row card: dish info on the left, vote button on the right."""
     name = c["name"]
     user = st.session_state.user_name
-    with st.container(border=True):
-        title = f"**{safe_md(name)}**" + (f" · {safe_md(c['prep_time'])}" if c.get("prep_time") else "")
-        st.markdown(title)
-        badge = SOURCE_BADGE.get(c.get("source"))
-        if badge:
-            st.markdown(badge.format(who=safe_md(c.get("added_by") or "a flatmate"),
-                                     book=safe_md(c.get("book") or "Cookbook")))
-        elif c.get("last_made") is not None:
-            st.caption(f"Last made {c['last_made']} days ago")
-        if c.get("reason"):
-            st.caption(c["reason"])
-        if c.get("source") in ("cookbook", "ai") and c.get("ingredients"):
-            st.caption(f"🧂 {c['ingredients']}")
-        n = counts.get(name, 0)
-        voters = [k for k, v in votes.items() if v == name]
-        line = f"🗳️ **{n}**" + (f" · {safe_md(', '.join(voters))}" if voters else "")
-        if n and n == top:
-            line += " · :green[**🏆 leading**]"
-        st.markdown(line)
-        mine = votes.get(user) == name
-        if st.button("Voted ✓" if mine else "Vote", key=f"vote_{mk}_{c.get('source')}_{idx}_{name}",
-                     disabled=mine, type="secondary" if mine else "primary"):
-            plan_ref(code, ds).set({"date": ds, "votes": {mk: {user: name}}}, merge=True)
-            if c.get("source") in ("cookbook", "ai"):
-                add_or_tag_recipe(code, group, name, [meal_type], c.get("ingredients", ""),
-                                  c.get("prep_time", ""), user)
-            st.rerun()
+    n = counts.get(name, 0)
+    mine = votes.get(user) == name
+    lead = bool(n) and n == top
+    src = c.get("source")
+    key = f"card_{mk}_{idx}" + ("_lead" if lead else "") + ("_mine" if mine else "")
+    with st.container(key=key):
+        left, right = st.columns([5, 2], vertical_alignment="center", gap="small")
+        with left:
+            lines = [f"**{safe_md(name)}**" + (" 🏆" if lead else "")]
+            meta = []
+            if c.get("prep_time"):
+                meta.append(f":gray[⏱ {safe_md(c['prep_time'])}]")
+            if src == "member":
+                meta.append(f":blue-background[➕ {safe_md(clip(c.get('added_by') or 'flatmate', 14))}]")
+            elif src == "cookbook":
+                meta.append(f":violet-background[📖 {safe_md(short_book(c.get('book')))}]")
+            elif src == "ai":
+                meta.append(":orange-background[✨ AI idea]")
+            elif c.get("last_made") is not None:
+                meta.append(f":gray[made {c['last_made']}d ago]")
+            if meta:
+                lines.append(" · ".join(meta))
+            if src in ("cookbook", "ai") and (c.get("reason") or c.get("ingredients")):
+                lines.append(f":gray[{safe_md(clip(c.get('reason') or c.get('ingredients'), 70))}]")
+            voters = [k for k, v in votes.items() if v == name]
+            if voters:
+                lines.append(f":green[🗳️ **{n}**] :gray[{safe_md(clip(', '.join(voters), 40))}]")
+            tip = []
+            if c.get("ingredients"):
+                tip.append(f"Ingredients: {c['ingredients']}")
+            if c.get("book_title"):
+                tip.append(f"In the book as: {c['book_title']}")
+            st.markdown("  \n".join(lines), help=("  \n".join(tip) or None))
+        with right:
+            if st.button("✓ Voted" if mine else "Vote", key=f"vote_{mk}_{src}_{idx}_{norm(name)}",
+                         disabled=mine, type="secondary" if mine else "primary", use_container_width=True):
+                plan_ref(code, ds).set({"date": ds, "votes": {mk: {user: name}}}, merge=True)
+                if src in ("cookbook", "ai"):
+                    add_or_tag_recipe(code, group, name, [meal_type], c.get("ingredients", ""),
+                                      c.get("prep_time", ""), user)
+                flash(f"🗳️ Voted for {name}", "toast")
+                st.rerun()
+
+
+def render_grid(cards, mk, offset, votes, counts, top, code, group, meal_type, ds):
+    """Row by row (not column by column), so the ranking order survives on phones,
+    where Streamlit stacks the two columns into one."""
+    for i in range(0, len(cards), 2):
+        cols = st.columns(2, gap="small")
+        for j, c in enumerate(cards[i:i + 2]):
+            with cols[j]:
+                render_card(c, mk, offset + i + j, votes, counts, top, code, group, meal_type, ds)
 
 
 def render_meal(code, group, plan, meal_type, ds, mode):
@@ -1092,12 +1178,13 @@ def render_meal(code, group, plan, meal_type, ds, mode):
     counts = Counter(votes.values())
     top = max(counts.values()) if counts else 0
 
-    st.header(f"{MEAL_EMOJIS[meal_type]} {meal_type}", divider="green")
+    st.subheader(f"{MEAL_EMOJIS[meal_type]} {meal_type}", divider="green")
 
     if logged:
         cook = f" · cooked by {safe_md(logged['cooked_by'])}" if logged.get("cooked_by") else ""
-        st.success(f"Today's {mk}: **{safe_md(logged['recipe'])}**{cook}")
-        if st.button("Undo log", key=f"undo_{mk}"):
+        c1, c2 = st.columns([4, 1], vertical_alignment="center")
+        c1.success(f"Today's {mk}: **{safe_md(logged['recipe'])}**{cook}")
+        if c2.button("Undo", key=f"undo_{mk}", type="tertiary"):
             clear_logged(code, ds, mk)
             st.rerun()
 
@@ -1111,37 +1198,41 @@ def render_meal(code, group, plan, meal_type, ds, mode):
 
     st.markdown("**🔄 From your kitchen**")
     if kitchen:
-        st.caption(f"{len(kitchen)} options for {MODE_LABEL[mode].split(' (')[0].lower()} cooking, "
-                   f"skipping anything made in the last {EXCLUDE_DAYS} days"
-                   + (". Scroll inside the box for more ↓" if len(kitchen) > 2 else ""))
-        box = st.container(height=430, border=False) if len(kitchen) > 2 else st.container()
-        with box:
-            cols = st.columns(2)
-            for i, c in enumerate(kitchen):
-                with cols[i % 2]:
-                    render_card(c, mk, i, votes, counts, top, code, group, meal_type, ds)
+        more_key = f"more_{ds}_{mk}"
+        show_all = st.session_state.get(more_key, False)
+        # Top 4, plus anything someone already voted for, so no vote is ever hidden
+        visible = kitchen if show_all else [c for i, c in enumerate(kitchen)
+                                            if i < KITCHEN_VISIBLE or counts.get(c["name"])]
+        st.caption(f"{MODE_LABEL[mode].split(' (')[0]} picks · nothing you made in the last {EXCLUDE_DAYS} days")
+        render_grid(visible, mk, 0, votes, counts, top, code, group, meal_type, ds)
+        hidden = len(kitchen) - len(visible)
+        if hidden > 0:
+            if st.button(f"Show {hidden} more ▾", key=f"morebtn_{mk}", type="tertiary"):
+                st.session_state[more_key] = True
+                st.rerun()
+        elif show_all and len(kitchen) > KITCHEN_VISIBLE:
+            if st.button("Show less ▴", key=f"lessbtn_{mk}", type="tertiary"):
+                st.session_state[more_key] = False
+                st.rerun()
     else:
         st.caption("No recipes for this meal yet. Add one below or from the sidebar.")
 
-    st.markdown("**✨ Try something new**")
-    if newer:
-        n_cb = sum(1 for c in newer if c.get("source") == "cookbook")
-        st.caption(f"{n_cb} from your cookbooks 📖 · {len(newer) - n_cb} AI ideas ✨"
-                   + (" · cookbook times are rough estimates" if n_cb else ""))
-        cols = st.columns(2)
-        for i, c in enumerate(newer):
-            with cols[i % 2]:
-                render_card(c, mk, 100 + i, votes, counts, top, code, group, meal_type, ds)
-    else:
-        st.caption("No new ideas right now. Tap Refresh suggestions (see the note at the top if AI is off).")
-
-    c1, c2 = st.columns(2)
-    with c1:
-        if st.button("🔄 Refresh suggestions", key=f"refresh_{mk}",
-                     help="Gets a fresh list. Clears today's votes for this meal."):
+    # New ideas: collapsed until someone opens it (opens itself once a new idea has votes)
+    n_cb = sum(1 for c in newer if c.get("source") == "cookbook")
+    has_new_votes = any(counts.get(c["name"]) for c in newer)
+    label = (f"✨ Try something new · {n_cb} 📖 + {len(newer) - n_cb} ✨" if newer else "✨ Try something new")
+    with st.expander(label, expanded=has_new_votes):
+        if newer:
+            if n_cb:
+                st.caption("📖 from your cookbooks (times are rough estimates) · ✨ fresh AI ideas")
+            render_grid(newer, mk, 100, votes, counts, top, code, group, meal_type, ds)
+        else:
+            st.caption("No new ideas right now. Tap Refresh suggestions (see the note at the top if AI is off).")
+        if st.button("🔄 Refresh suggestions", key=f"refresh_{mk}", type="tertiary",
+                     help="Gets a fresh list for this meal. Clears today's votes for this meal."):
             with st.spinner("Thinking..."):
                 err = refresh_meal(code, group, ds, meal_type, mode)
-            flash(err, "warning") if err else flash(f"New {mk} suggestions ready.")
+            flash(err, "warning") if err else flash(f"New {mk} suggestions ready", "toast")
             st.rerun()
 
     with st.expander("➕ Add an option to today's vote"):
@@ -1158,7 +1249,7 @@ def render_meal(code, group, plan, meal_type, ds, mode):
                 _, rec = add_or_tag_recipe(code, group, dish, [meal_type], added_by=user)
                 plan_ref(code, ds).set({"date": ds, "extra": {mk: {
                     norm(rec["name"]): card_from(rec, "member", added_by=user)}}}, merge=True)
-                flash(f"**{safe_md(rec['name'])}** added to today's {mk} vote.")
+                flash(f"➕ {rec['name']} added to today's {mk} vote", "toast")
                 st.rerun()
 
     with st.expander("📝 Log what you actually made", expanded=bool(votes) and not logged):
@@ -1178,7 +1269,7 @@ def render_meal(code, group, plan, meal_type, ds, mode):
             else:
                 save_logged(code, ds, mk, dish, "" if cook == "Not specified" else cook, user)
                 add_or_tag_recipe(code, group, dish, [meal_type], added_by=user)
-                flash(f"Logged {mk}: **{safe_md(dish)}**")
+                flash(f"✅ Logged {mk}: {dish}", "toast")
                 st.rerun()
 
     not_voted = [m for m in group.get("members", []) if m not in votes]
@@ -1208,8 +1299,8 @@ def page_daily():
     mode = plan0.get("time_mode") or default_mode(group, today())
     with st.container(border=True):
         on = st.toggle("🍲 Elaborate cooking today", value=(mode == "elaborate"), key=f"mode_{ds}_{mode}",
-                       help="Off: quick dishes, up to 30 min. On: longer, more involved dishes. "
-                            "Switching re-plans meals that aren't logged yet and resets their votes.")
+                       help="Off: quick dishes (up to 30 min). On: longer dishes. "
+                            "Switching re-plans meals not logged yet and resets their votes.")
         day_type = "weekend" if today().weekday() >= 5 else "weekday"
         st.caption(f"Showing **{MODE_LABEL[mode]}** dishes for everyone. "
                    f"Group default on {day_type}s: {MODE_LABEL[time_pref(group)[day_type]]}.")
@@ -1219,6 +1310,7 @@ def page_daily():
         flash(f"Switched to {MODE_LABEL[new_mode]} for today.", "info")
         st.rerun()
 
+    inject_css()
     show_flash()
     plan = ensure_today(code, group, ds, mode)
     if plan.get("ai_error"):
